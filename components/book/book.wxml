@@ -1,0 +1,11 @@
+<!--components/book/book.wxml-->
+<view class="book-wrapper" bindtap="bookClick">
+  <image src="{{book.image}}"
+         class="book-image"
+         mode="scaleToFill"></image>
+  <view>
+    <view class="book-name">{{book.name}}</view>
+    <view class="book-author">{{book.author}}</view>
+    <view class="book-des">{{book.des}}</view>
+  </view>
+</view>

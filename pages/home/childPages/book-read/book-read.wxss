@@ -1,0 +1,4 @@
+/* pages/home/childPages/book-read/book-read.wxss */
+.book-content {
+  margin:0 15rpx;
+}

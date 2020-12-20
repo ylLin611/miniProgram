@@ -1,0 +1,11 @@
+<!--search组件-->
+<view class="search">
+  <navigator class="search-navigator"
+             url="{{url}}"
+             hover-class="navigator-click">
+       <image src="/assets/search/Search.png"
+              mode="scaleToFill"
+              class="search-image">
+       </image>
+       搜索</navigator>
+</view>

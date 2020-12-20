@@ -1,12 +1,48 @@
 {
-  "pages":[
-    "pages/home/home"
+  "pages": [
+    "pages/home/home",
+    "pages/ranking/ranking",
+    "pages/category/category",
+    "pages/profile/profile",
+    "pages/home/childPages/search/search",
+    "pages/home/childPages/book-read/book-read"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Old Five",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "selectedColor": "#ffa725",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "书架",
+        "iconPath": "/assets/tabbar/aichong01.png",
+        "selectedIconPath": "/assets/tabbar/aichong02.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排行",
+        "iconPath": "/assets/tabbar/aichong05.png",
+        "selectedIconPath": "/assets/tabbar/aichong06.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "/assets/tabbar/aichong03.png",
+        "selectedIconPath": "/assets/tabbar/aichong04.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/tabbar/aichong01.png",
+        "selectedIconPath": "/assets/tabbar/aichong02.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,25 @@
+/* components/search/search.wxss */
+.search {
+  width: 95%;
+  height: 60rpx;
+  margin: 5rpx 20rpx;
+
+  background-color: #e7e7e7;
+  border-radius: 30rpx;
+
+  display: flex;
+  align-items: center;
+}
+.search-image {
+  width: 30rpx;
+  height: 30rpx;
+  margin:0 10rpx 0 30rpx;
+}
+.search-navigator {
+  font-size: 30rpx;
+  color: #949494;
+  width: 100%;
+}
+.navigator-click {
+  color: #c8c8c8;
+}

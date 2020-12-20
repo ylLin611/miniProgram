@@ -1,0 +1,21 @@
+/* components/search-input/search-input.wxss */
+.search {
+  width: 95%;
+  height: 60rpx;
+  margin: 5rpx 20rpx;
+
+  background-color: #e7e7e7;
+  border-radius: 30rpx;
+
+  display: flex;
+  align-items: center;
+}
+.search-image {
+  width: 30rpx;
+  height: 30rpx;
+  margin:0 30rpx;
+  padding: 10rpx;
+}
+.input {
+  flex: 1;
+}

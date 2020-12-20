@@ -1,0 +1,5 @@
+<!--pages/home/childPages/search/search.wxml-->
+<search-input bind:handleInput="searchBook"></search-input>
+<block wx:for="{{bookList}}" wx:key="id">
+  <book book="{{item}}" bind:bookClick="bookClick"></book>
+</block>

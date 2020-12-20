@@ -1,0 +1,7 @@
+<!--pages/home/childPages/book-read/book-read.wxml-->
+<book book="{{book}}"></book>
+<block wx:for="{{bookConent}}" wx:key="id">
+  <view class="book-content">
+    <text>{{item.content}}</text>
+  </view>
+</block>

@@ -1,19 +1,13 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
-}
-
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
-}
-
-module.exports = {
-  formatTime: formatTime
+export const debounce = function(fn, delay) {
+  var timer = null;
+  return function() {
+    if (timer) clearTimeout(timer);
+    // 获取this和argument
+    var _this = this;
+    var _arguments = arguments;
+    timer = setTimeout(function() {
+      // 在执行时，通过apply来使用_this和_arguments
+      fn.apply(_this, _arguments);
+    }, delay);
+  }
 }
