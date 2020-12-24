@@ -6,7 +6,8 @@
 
 ​	借鉴了点微信读书小程序的布局，都是一看就能明白的功能，不再详细介绍。
 
-
+![image](https://github.com/ylLin611/miniProgram/blob/main/image%20for%20readme/%E6%90%9C%E7%B4%A2.png)
+![image](https://github.com/ylLin611/miniProgram/blob/main/image%20for%20readme/%E7%9B%AE%E5%BD%95%E3%80%81%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93%E3%80%81%E5%8A%A0%E5%85%A5%E4%B9%A6%E6%9E%B6.png)
 
 #### 接口API
 
