@@ -6,6 +6,8 @@ Page({
     this.setData({
       book: wx.getStorageSync('bookShelf')
     })
+    console.log(this.data.book);
+    
   },
   //点击对应书籍触发事件
   bookClick(e){

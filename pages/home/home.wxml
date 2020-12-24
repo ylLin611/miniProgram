@@ -1,3 +1,2 @@
 <search url="/pages/home/childPages/search/search"></search>
-
 <book book="{{book}}" bind:bookClick="bookClick"></book>
