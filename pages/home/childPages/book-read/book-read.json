@@ -1,5 +1,7 @@
 {
   "usingComponents": {
     "book":"/components/book/book"
-  }
+  },
+  "navigationBarTitleText": "阅读书籍",
+  "navigationBarBackgroundColor": "#ffffff"
 }

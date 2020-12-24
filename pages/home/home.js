@@ -1,65 +1,32 @@
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-    
+  data:{
+    book:{}
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+  onLoad: function(){
+    this.setData({
+      book: wx.getStorageSync('bookShelf')
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  //点击对应书籍触发事件
+  bookClick(e){
+    //解决参数超长
+    const obj = {
+      name:e.detail.book.name,
+      author:e.detail.book.author,
+      image:e.detail.book.image,
+      des:e.detail.book.des,
+      id:e.detail.book.id
+    }
+    const url = '/pages/home/childPages/book-read/book-read?book='+JSON.stringify(obj)
+    //覆盖跳转到书籍详情页，让用户返回时直接返回书架
+    wx.redirectTo({
+      url
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function (options) {
     
   }
 })

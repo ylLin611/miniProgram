@@ -1,4 +1,66 @@
 /* pages/home/childPages/book-read/book-read.wxss */
 .book-content {
-  margin:0 15rpx;
+  margin:0 30rpx;
+}
+.tabbar {
+  display: flex;
+  align-items: center;
+
+  height: 100rpx;
+  width: 100%;
+
+  background-color: #ffffff;
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+}
+.tabbar image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.tabbar-item {
+  flex:1;
+  font-size: 30rpx;
+  color: #818181;
+  text-align: center;
+}
+.categoryView {
+  height: 800rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 100rpx;
+  background-color: #ffffff;
+  z-index: 99;
+}
+.categoryView view{
+  margin-left: 50rpx;
+  padding:20rpx 0 ;
+  color: #818181;
+}
+.categoryView view:hover {
+  color: rgb(2, 2, 255);
+}
+.scrollMask {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  z-index: 98;
+}
+.setView {
+  height: 400rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 100rpx;
+  background-color: #ffffff;
+  z-index: 99;
+}
+.backgroundSetBlock{
+  display: inline-block;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50rpx;
+  margin: 20rpx
 }

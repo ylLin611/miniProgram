@@ -1,4 +1,4 @@
-<!--search组件-->
+<!--search组件(navigator,须传入url)-->
 <view class="search">
   <navigator class="search-navigator"
              url="{{url}}"

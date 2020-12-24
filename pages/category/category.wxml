@@ -1,2 +1,31 @@
 <!--pages/category/category.wxml-->
-<text>分类</text>
+<!-- 外层最大容器 -->
+<view class="wrap">
+        <!--包裹所有元素的容器-->
+        <view class="cube">
+            <!--前面图片 -->
+            <view class="out_front">
+                玄幻
+            </view>
+            <!--后面图片 -->
+            <view class="out_back">
+                奇幻
+            </view>
+            <!--左面图片 -->
+            <view class="out_left">
+                武侠
+            </view>
+            <!--右面图片 -->
+            <view class="out_right">
+                都市
+            </view>
+            <!--上面图片 -->
+            <view class="out_top">
+                历史
+            </view>
+            <!--下面图片 -->
+            <view class="out_bottom">
+                科幻
+            </view>
+        </view>
+    </view>

@@ -7,6 +7,7 @@ Page({
   data: {
     bookList:[]
   },
+  //通过输入的关键字查询出对应书籍列表
   searchBook(e){
     request({
       url: 'bookList',
@@ -20,6 +21,7 @@ Page({
       })
     })
   },
+  //点击对应书籍触发事件
   bookClick(e){
     //解决参数超长
     const obj = {

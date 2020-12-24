@@ -2,5 +2,6 @@
   "usingComponents": {
     "search-input":"/components/search-input/search-input",
     "book":"/components/book/book"
-  }
+  },
+  "navigationBarTitleText": "查询书籍"
 }

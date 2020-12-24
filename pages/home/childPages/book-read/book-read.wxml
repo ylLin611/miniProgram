@@ -1,7 +1,60 @@
 <!--pages/home/childPages/book-read/book-read.wxml-->
+<!-- 书籍详情区 -->
 <book book="{{book}}"></book>
-<block wx:for="{{bookConent}}" wx:key="id">
+<!-- 书籍内容区 -->
+<view bindtap="tabbarShow"
+      bindtouchmove="tabbarHide"
+      style="font-size:{{fontSize}}rpx;background-color:{{backgroundColor}}">
+  <block wx:for="{{bookConent}}" wx:key="id">
   <view class="book-content">
     <text>{{item.content}}</text>
   </view>
 </block>
+</view>
+<!-- 目录、设置、加入书架tabbar区 -->
+<view class="tabbar" hidden="{{!showTabbar}}">
+  <view class="tabbar-item"
+        bindtap="categoryClick">
+    <image src="/assets/tabbar/Category.png"></image>
+    <view>目录</view>
+  </view>
+  <view class="tabbar-item"
+        bindtap="setClick">
+    <image src="/assets/tabbar/shezhi.png"></image>
+    <view>设置</view>
+  </view>
+  <view class="tabbar-item"
+        bindtap="addToBookShelf">
+    <image src="/assets/tabbar/wodeshujia.png"></image>
+    <view>加入书架</view>
+  </view>
+</view>
+<!-- 点击目录后生成背景遮罩层，不让点击书籍内容区 -->
+<view class="scrollMask" wx:if="{{categoryShow}}"></view>
+<!-- 目录查看滚动区 -->
+<scroll-view wx:if="{{categoryShow}}"
+             class="categoryView"
+             scroll-y="{{true}}">
+  <block wx:for="{{category}}" wx:key="chaperIdx">
+    <view bindtap="chapterClick"
+          data-chaperIdx="{{item.chaperIdx}}">{{item.name}}</view> 
+  </block>
+</scroll-view>
+<!-- 设置查看区 -->
+<view class="setView"
+      wx:if="{{setShow}}">
+  <text>字体大小</text>
+  <slider min="32"
+          max="64"
+          block-size="20"
+          bindchange="changeFontSize"></slider>
+  <text>背景颜色</text>
+  <scroll-view scroll-x="true">
+    <block wx:for="{{colorList}}" wx:key="index">
+      <view style="background-color:{{item}}"
+            class="backgroundSetBlock"
+            bindtap="changeBackgroundColor"
+            data-color="{{item}}"></view>
+    </block>
+  </scroll-view>
+</view>

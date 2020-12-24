@@ -20,6 +20,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    //输入框输入方法（加入防抖）
     handleInput(event){
       this.setData({
         value: event.detail.value
@@ -32,6 +33,11 @@ Component({
       this.timer = setTimeout(()=>{
         this.triggerEvent('handleInput',{value:this.data.value})
       },600)
+    },
+    clearVlue(){
+      this.setData({
+        value: ''
+      })
     }
   }
 })

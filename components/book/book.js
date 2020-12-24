@@ -22,6 +22,17 @@ Component({
   methods: {
     bookClick(){
       this.triggerEvent('bookClick',{book:this.properties.book})
+    },
+    //点击书籍简介，弹出model，去掉取消，确定文本改为关闭
+    bookDesClick(e){
+      const {name,des} = e.target.dataset
+      wx.showModal({
+        title: name,
+        content: des,
+        showCancel: false,
+        confirmText: '关闭',
+        confirmColor: 'red'
+      })
     }
   }
 })

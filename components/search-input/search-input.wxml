@@ -11,5 +11,6 @@
   <image src="/assets/search/close.png"
               mode="scaleToFill"
               class="search-image"
-              wx:if="{{value.value}}"></image>
+              wx:if="{{value}}"
+              bindtap="clearVlue"></image>
 </view>

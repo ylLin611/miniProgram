@@ -6,6 +6,9 @@
   <view>
     <view class="book-name">{{book.name}}</view>
     <view class="book-author">{{book.author}}</view>
-    <view class="book-des">{{book.des}}</view>
+    <view class="book-des" 
+          catchtap="bookDesClick"
+          data-des="{{book.des}}"
+          data-name="{{book.name}}">{{book.des}}</view>
   </view>
 </view>
